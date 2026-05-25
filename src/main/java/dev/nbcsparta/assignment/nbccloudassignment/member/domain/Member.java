@@ -35,6 +35,8 @@ public class Member {
     @Column(nullable = false, length = 4)
     private String mbti;
 
+    private String profileKey;
+
     public Member(String name, Integer age, String mbti) {
         validateName(name);
         validateAge(age);
@@ -70,5 +72,9 @@ public class Member {
         }
 
         return normalizedMbti;
+    }
+
+    public void setProfileKey(String key) {
+        this.profileKey = key;
     }
 }
