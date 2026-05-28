@@ -1,0 +1,16 @@
+.git
+.gradle
+.idea
+.codex
+AGENTS.md
+build
+!build/libs
+!build/libs/**
+out
+bin
+*.iml
+*.iws
+*.ipr
+.DS_Store
+HELP.md
+**/application-local.properties

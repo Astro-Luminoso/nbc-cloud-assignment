@@ -48,7 +48,7 @@ jobs:
     
     # Step 4 Run Test
     - name: Run Tests
-      run: ./gradlew test
+      run: AWS_PARAMETERSTORE_PATH=${{vars.AWS_PARAM_STORE_PATH}} ./gradlew test
     
     # Step 5 Jar Build
     - name: Build JAR
