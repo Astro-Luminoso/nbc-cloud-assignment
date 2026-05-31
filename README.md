@@ -50,10 +50,22 @@ Actuator 의존성도 추가하여 `/actuator/health` 접속이 가능합니다.
 
 위의 스크린샷은 이미지를 업로드 했을때와 다운로드 했을 때의 결과다. 아래 PresignedURL을 접속하면 아마 사진이 나올 것이다. 보잘 것 없는 사진이여도 저작권은 나에게 있다.
 
-https://nbc-cloud-assignment-hyang-bucket.s3.ap-northeast-2.amazonaws.com/uploads/d9f09844-2360-4033-ad76-d56f0d45ea2f_IMG_2261.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaDmFwLW5vcnRoZWFzdC0yIkcwRQIgbM%2FnNEaMJ7esx%2BrlhnNSzkHaq%2F4qlgMLugV7B3BGQ10CIQDBSt18VmMGS6qaqotQO1cgIMLeFksXYVCSPP%2FYrU1z0irSBQj1%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM1MzI1MTM5MzQ2NSIMnZpmy1D0J2GWMiUpKqYFx9WXEJ9lVtPLylbsWsUqrFJQCM%2BFTzdqS0aE8MtXktVXCGELGlTeyfPN1fL9LZNe8CcB%2BgkyTiBtZ32zYeqnAqJpK3oziByT1P008asBlYRKHU3SxvHOTRRd8hsvRB899mYxFcnKOjIsEkDLykY20p1xJ3aeucmFbi3w6RanhKSbuy7aqpK2ElNzAYcxPF6MHrGop4UEUmVNav3oVoWGLkdlOVslf8ipjR00JE44vKz1kFjJ3TKaCNkJgq5it9KBeRyPaQXqzpiFDkDtPY11SzWytmFEhJDaao3itUw9UHdgEa0l4O1x1VwXZeWBrHf2byczUMms655C%2BNtO9lYwU%2F06LwYMX4yJXm%2BiyVplw36s3vkegZuR4%2FEZLNs7pB8SoKDznt%2BnjHjTSnikvZn%2Fx%2BabiLQ1ESDsvrJyfK1yAmLAaRQA4bxHq8RyRO6NSYU0sSMX6LzX5l3posq60CsLDaL31hPpZFd%2BbwcgXiO6KzlVsXyqgMfkK%2Fq7PTZpF7MY5sBxjUFU9qnyqEg8CV%2FuYn4QFFVJkZLX0kq%2BzVHaQhbVnhgoKPIbqCUwxehEpjD2FIz4b%2BdroQf%2Bvr%2FzCPHFflLfJTjGVBpRxy7bjRCaOmsBGoN%2Fp9fPEveFclL0YRgWjrUZLJasI3GsJi6eClb2q6h1RE8%2FnBDT4Fe8dLBWhAdWzK71Av0TiganSSyLVl1MRmwPGDPKecjcAlrD%2Ft5H0fQ3PZHi9ZNd%2Fwe0Wc30K8H6MErTHAIiEbpPRWf9jszq215Cm%2BOkrOQwDXsksQEkYBvqKiBy9et9r6Hm5q1YO7YTI8d4xK7PgDUNJaPYdOISWd7YQW%2F1ll0hNgDYyyfWAMkx2I2kaSlyhP89AwVkFMXlyVxjBohSd9n7auSKcJBI3iRTXFpkMN%2B%2F8NAGOrEB6XBIG1AXdZtfQuxy1CHYXHZmQzdr0KrQ0i3jiS1kwQZQSXg%2FDhVY5DPSNy8KIwbJiQGXoxewc97sGTYWC9AHsrNR3klbwZQwV86lpyTWls9NiD1xPb4EBVeH6YzVyT4V%2FErMgYuw8fve%2BcNYfS8Q28wRdgKmBPTz77CWkq7N08ETMc2dyVtg2K17%2BaycqqgSSCdl5xbEYYPjwEAe0kfnfrJ1oucDzB3qK7jAUn%2FCuf%2Bo&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260531T123017Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIAVEP3MP64QIQTSUST%2F20260531%2Fap-northeast-2%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=1aaf3ae4033168fc5641658589f2f7934b613a2f571305d242719041d5ec4033
+https://nbc-cloud-assignment-hyang-bucket.s3.ap-northeast-2.amazonaws.com/uploads/d9f09844-2360-4033-ad76-d56f0d45ea2f_IMG_2261.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDAaDmFwLW5vcnRoZWFzdC0yIkgwRgIhAOx5oxmOrfUNZkqpKgCbZ0WfVnLH%2FUhUOQ8rMzNKg3mDAiEA3QERjkib4nluwXD1kaJ2l5yYmYnFGUt8xlVJXPqvPUMq1AUI%2Bf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwzNTMyNTEzOTM0NjUiDLxrvu%2FmYCqvRcx%2FIyqoBSK%2BqcoDc%2B1i7TwJlritO5oa5KjHcRfVPnP8cZffFlRMXoOXqGf9uMILxAvHDTbqGCJT7nCBzdL3rsftQ3PxfdbGlA8zK1sDUftlaN9gAYYFDp%2BHhtfcNMyQYhz36MGEkpe8YYMvSYJ0bdp2ui166eWvPT0ltPI%2BgxDIGpgDSVPXNnQn8EEq1yJF3foiWWeZ0rIZ1FTrDVQomSKH9XEIjKVHDfhSllxTEvlXc7rxAzC%2F%2F93%2FmWuC5u9Xqo9Ze%2BlOzSQfX6bhcSNFsN0RWsOkT3adsxgD7gqAiASovX9tr0PKDeg65a5HHEqTY8s1gSP9%2Bp3Rqy1CXMeyI1LMk%2BSFGFB%2BaWaWFh3f4KgJl20Mc3hgh7rAvICL1Gb8sIxY04Q6%2FSm%2FVgZUQTSx2qIQsZTwl8PPeSAYPOangcx%2BEhNb%2Fi4ZkopLfKe2Kyy%2F11Lywh4xy270TYHIBQjykcJ3S50pT5XG4lINYsEbygNocOzKASIhmgYiMKpbbPz5T0zntecTP%2Fi0QgF1cfarJrlxWbZVR%2F%2BrzqVyS3qrFTLI3IG4xwqU6yZ%2FmUVknk3yPmS25DawEPRfLFwLSZtjfw4%2FfHSI2IehCaROBjPjecO%2FzriD0NmcJ7pkWXAmsmCK8Nz0tzWEvO0uHw%2FOnLaQVjsU4kQRTciAkpFmIsTLRcYSkloMbGtR00RhDfHMjGI%2Be7VsQCfyc4F6fvKxuxSMaVVWdxv2KFX0kX4yJT%2FcG2%2FgPOjErbn6vW0ld933S0%2BaO7c23ZdpjVjqQzcwlcC%2BwvTknqJkve6hfT6T6f%2BVo9wIWBnG1S6IgRGXkdOp8p7AdcA%2FOiome1sxF4JNt0q5KpY88MaGfSAQsZvk9NWo2frLE6fTVYY3gTdhtrzPi%2B4K1mhN0J%2B9I9R9ikkwSlcZMNy78dAGOrABSGuYErNde8IGOqRVNBwj4lI1UJpdupQlJtUyHOH8DZ07R%2FDn%2B2z4AWBl2FgaNJZe0NEUJaBOsXJqYlU0NC35y8rh2zwXuvvn2mHVibkoEpukeFNORzQb3QOt3rKq7jj828JsJdrcvbrNyujnVL40Vw%2BvbzoFiiOKWVCDZe3oa6n4CPaU8QvNXACma6ERKZG9rii7grhAF44wYS64Vm5qj12NrGwkcvFgYNlmtPIHjn8%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260531T163544Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIAVEP3MP644WA7P67X%2F20260531%2Fap-northeast-2%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=4d4ffc3d7c420d433fcb42222b17df16aef72c244e60acf1a4d2868a6ffb5df3
 
 플래시 터트린거 아니다. 오해 하지 마시길...
 
 --- 필수 과제 끝 ---
 
 ---
+
+## Lv.4 Docker & CI/CD 파이프라인 구축 
+
+도커를 이용한 배포및 cicd 파이프라인 구축을 실시하였다.
+
+(deploy.yml은 리포지토리에서 직접 확인하시면 됩니다.)
+
+<img width="938" height="364" alt="Screenshot 2026-06-01 at 1 18 57 AM" src="https://github.com/user-attachments/assets/cdc37a14-c87b-4c04-bbf1-27ae9a0e3320" />
+
+<img width="1902" height="92" alt="Screenshot 2026-06-01 at 1 20 05 AM" src="https://github.com/user-attachments/assets/61dc83f2-92ea-40fd-80e3-90c28b7cac78" />
+
+## Lv.5 고가용성 아키텍처와 보안 도메인 연결 (ALB + ASG + HTTPS)
