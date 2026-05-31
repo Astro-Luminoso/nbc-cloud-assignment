@@ -99,6 +99,7 @@ jobs:
           AWS_REGION: ${{ vars.AWS_REGION }}
           ECR_REPOSITORY: ${{ vars.ECR_REPOSITORY }}
           LAUNCH_TEMPLATE_ID: ${{ vars.LAUNCH_TEMPLATE_ID }}
+          ENV_VAR_PATH: ${{ vars.AWS_ENV_VAR_PATH }}
         run: |
           ECR_URI="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPOSITORY}"
           
@@ -109,6 +110,7 @@ jobs:
           AWS_ACCOUNT_ID="__AWS_ACCOUNT_ID__"
           ECR_REPOSITORY="__ECR_REPOSITORY__"
           IMAGE_TAG="__IMAGE_TAG__"
+          ENV_VAR_PATH="__ENV_VAR_PATH__"
           ECR_URI="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPOSITORY}"
           dnf update -y
           dnf install -y docker
@@ -116,7 +118,7 @@ jobs:
           systemctl start docker
           aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com
           docker pull ${ECR_URI}:${IMAGE_TAG}
-          docker run -d -p 8080:8080 --restart unless-stopped --name ci-demo -e AWS_PARAMETERSTORE_PATH=${AWS_ENV_VAR_PATH} ${ECR_URI}:${IMAGE_TAG}
+          docker run -d -p 8080:8080 --restart unless-stopped --name ci-demo -e AWS_PARAMETERSTORE_PATH=${ENV_VAR_PATH} ${ECR_URI}:${IMAGE_TAG}
           USERDATA
           )
           
